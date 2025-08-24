@@ -70,9 +70,11 @@ body {
     padding: 5px;
         h2 {
             font-size:25px;
+            margin: 10px;
         }
         p {
             font-size:15px ;
+            margin: 15px;
         }
 }
 .aboutUnit2 {
@@ -87,7 +89,7 @@ body {
     max-height: 630px;
     border-radius: 20px;
     background-color: white;
-    /*The app itself*/
+    overflow: hidden;
 
 }
 /*For Screen sizes of each devices @Media*/

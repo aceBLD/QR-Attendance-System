@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>QR attendy Integrated</title>
     <link rel="stylesheet" href="/CoreCSS/main.css">
+    <link rel="stylesheet" href="/CoreCSS/mainUnit.css">
     
 </head>
 <body><!--
@@ -29,6 +30,24 @@
         </div>
         <!--This is the Device itself and its screensize-->
         <div class="Unit">
+                <div class="mainUNIT" id="theunit" >
+                    <h2 class="QR_attendy">QR Attendy</h2>
+                    <p class="DescriptQR">Made for Students & Teachers!</p>
+                    <button class="Signer" id="SignIn"  onclick="signIn_studentOrTeacher()">Sign In</button>
+                    <button class="Signer" id="SignUp"  onclick="signUp_studentOrTeacher()">Sign Up</button>
+                   
+                    <div class="buttonext">
+                        <p>Sign up with</p>
+                    <button id="google">G</button>
+                    <button id="telegram">T</button>
+                    <button id="facebook">F</button>
+                    </div>
+                </div>
+                <div class="signup">
+                    <p>What are you?</p>
+                    <button class="Signer" onclick=""><b>A Student</b></button>
+                    <button class="Signer" onclick=""><b>A Teacher</b></button>
+                </div>
 
         </div>
 
@@ -42,7 +61,7 @@
 
 
     <!--Script and shits -->
-    <script src="/Scripts/main.js">
-    </script>
+    <script src="/Scripts/main.js"></script>
+    <script src="/Scripts/mainUnit.js"></script>
 </body>
 </html>
