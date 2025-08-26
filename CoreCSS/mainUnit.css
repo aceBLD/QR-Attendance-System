@@ -16,6 +16,10 @@
             font-size: 14px;
             cursor:pointer;
             width: 100px;
+                a {
+                    text-decoration: none;
+                    color: white;
+                }
 
            }
            .buttonext {
