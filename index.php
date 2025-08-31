@@ -1,51 +1,6 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>QR attendy Integrated</title>
-    <link rel="stylesheet" href="/CoreCSS/main.css">
-    <link rel="stylesheet" href="/CoreCSS/mainUnit.css">
-    
-</head>
-<body>
-    <div id="NOTICE">
-        <div class="contains">
-        <h1>!NOTICE!</h1>
-        <p class="noticeP">Welcome to QR Attendy  Web Edition</p>
-        <p class="noticeP">This Project is also known as QR Attendance System for my Practical research 2 for Grade 12 Semester 1, Alongside with my Groupmates and my leader's idea. This is meant for my Practical Research 1 Project not publicly to be release, I REPEAT THIS IS NOT MEANT TO BE RELEASE ON PUBLIC ANDE MADE ONLY FOR RESEARCH AND TESTING!! If you have any feedback please click the link below</p>
-        <p class="noticeP">Github: <a href="https://github.com/BELDAD-Ace/QR-Attendance-System/issues/new">BELDAD-Ace</a></p>
-        <p class="noticeP">or</p>
-        <p class="noticeP"><a href="">Sent Feedback here</a></p>
-
-            <button onclick="closeNotice()" >I Understand</button>
-    </div>
-</div>
-
-    <div class="Main">
-        <div class="aboutUnit">
-            <h2>QR Attendy (QR Attendance System)</h2>
-            <p>QR Attendy is a web-based application designed to streamline attendance tracking using QR codes. It allows educators and event organizers to easily manage and record attendance in a digital format, reducing paperwork and enhancing efficiency.</p>
-            <p></p>
-        </div>
-        <!--This is the Device itself and its screensize-->
-        <div class="Unit">
-                <iframe src="/pages/mainUnit.html" class="mainUNIT">
-                </iframe>
-                
-        </div>
-
-        <div class="aboutUnit2">
-            <h1>Device used:</h1>
-            <h2>Vivo Y19s</h2>
-            </div>
-    </div>
-    
-
-
-
-    <!--Script and shits -->
-    <script src="/Scripts/main.js"></script>
-    <script src="/Scripts/mainUnit.js"></script>
-</body>
-</html>
+<?php
+// To run the website using PHP language by locating the mainpage
+//source code by ACE | Miku aka Mikuhimono on their PR2 tool
+header("Location: WebShita/main.html");
+exit;
+?>
