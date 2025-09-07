@@ -1,28 +1,94 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Integrated WebApp</title>
     <link rel="stylesheet" href="/WebShita/CoreCSS/mainUnit.css">
 </head>
+
 <body>
-    <!--This is the Device itself and its screensize-->
-        <div class="Unit">
-                <div class="mainUNIT" id="theunit" >
-                    <h2 class="QR_attendy">QR Attendy</h2>
-                    <p class="DescriptQR">Made for Students & Teachers!</p>
-                    <a href="/WebShita/pages/signIn.html"><button class="Signer" id="SignIn">Sign In</button></a>
-                    <a href="/WebShita/pages/signIn.html"><button class="Signer" id="SignUp" >Sign Up</a></button>
-                   
-                    <div class="buttonext">
-                        <p>Sign up with</p>
-                    <button id="google">G</button>
-                    <button id="telegram">T</button>
-                    <button id="facebook">F</button>
-                    </div>
-                </div>          
-        </div>
-        <script src="/WebShita/Scripts/mainUnit.js"></script>
+    <div class="greeting-open-pag">
+        <h2 class="QR_attendy">QR Attendy</h2>
+        <p class="DescriptQR">Made for Students & Teachers!</p>
+        <button class="Signer" id="SignIn">Sign In</button>
+        <button class="Signer" id="SignUp">Sign Up</button>
+
+    </div>
+
+    <div class="signIn-Container">
+        <h2 id="h2-login">Welcome Back</h2>
+        <form id="loginForm">
+            <div class="input-groupL2">
+                <input type="email" id="emailL" required>
+                <label>Email</label>
+            </div>
+            <div class="input-groupL belowbutton">
+                <input type="text" id="passwordL">
+                <label>Password</label>
+            </div>
+            <a href="#" class="forgot">Forgot password?</a>
+            <div class="log-in-links">
+                <svg id="google" xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="-3 0 262 262"
+                    preserveAspectRatio="xMidYMid">
+                    <path
+                        d="M255.878 133.451c0-10.734-.871-18.567-2.756-26.69H130.55v48.448h71.947c-1.45 12.04-9.283 30.172-26.69 42.356l-.244 1.622 38.755 30.023 2.685.268c24.659-22.774 38.875-56.282 38.875-96.027"
+                        fill="#4285F4" />
+                    <path
+                        d="M130.55 261.1c35.248 0 64.839-11.605 86.453-31.622l-41.196-31.913c-11.024 7.688-25.82 13.055-45.257 13.055-34.523 0-63.824-22.773-74.269-54.25l-1.531.13-40.298 31.187-.527 1.465C35.393 231.798 79.49 261.1 130.55 261.1"
+                        fill="#34A853" />
+                    <path
+                        d="M56.281 156.37c-2.756-8.123-4.351-16.827-4.351-25.82 0-8.994 1.595-17.697 4.206-25.82l-.073-1.73L15.26 71.312l-1.335.635C5.077 89.644 0 109.517 0 130.55s5.077 40.905 13.925 58.602l42.356-32.782"
+                        fill="#FBBC05" />
+                    <path
+                        d="M130.55 50.479c24.514 0 41.05 10.589 50.479 19.438l36.844-35.974C195.245 12.91 165.798 0 130.55 0 79.49 0 35.393 29.301 13.925 71.947l42.211 32.783c10.59-31.477 39.891-54.251 74.414-54.251"
+                        fill="#EB4335" />
+                </svg>
+                <a href="#" id="facebook">
+                    <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100"
+                        viewBox="0 0 50 50">
+                        <path
+                            d="M25,3C12.85,3,3,12.85,3,25c0,11.03,8.125,20.137,18.712,21.728V30.831h-5.443v-5.783h5.443v-3.848 c0-6.371,3.104-9.168,8.399-9.168c2.536,0,3.877,0.188,4.512,0.274v5.048h-3.612c-2.248,0-3.033,2.131-3.033,4.533v3.161h6.588 l-0.894,5.783h-5.694v15.944C38.716,45.318,47,36.137,47,25C47,12.85,37.15,3,25,3z">
+                        </path>
+                    </svg></a>
+            </div>
+        </form>
+        <p id="notice"></p>
+        <button id="button-login" onclick="Login()">Log In </button>
+        <p id="error-messageL"></p>
+        <p id="error-messageL2"></p>
+        <p class="sign-link">Don't have an Account? <button id="sign-link">Sign up</button> </p>
+    </div>
+
+    <div class="signUp-Container">
+        <h2 id="h2-signIn">Create Account</h2>
+        <form id="signupForm">
+            <div class="input-group">
+                <input type="text" id="name" required>
+                <label>Username</label>
+            </div>
+            <div class="input-group2">
+                <input type="email" id="email" required>
+                <label>Email</label>
+            </div>
+            <div class="input-group">
+                <input type="password" id="password" required>
+                <label>Password</label>
+            </div>
+            <div class="input-group">
+                <input type="password" id="confirmPassword" required>
+                <label>Confirm Password</label>
+            </div>
+            <button id="button-signup" type="submit" onclick="Signup()">Sign Up</button>
+            <p id="error-message"></p>
+        </form>
+        <p class="login-link">Already have an account? <button id="log-link">Log In</button> </p>
+
+    </div>
+
+
+    <script src="/WebShita/Scripts/mainUnit.js"></script>
 </body>
+
 </html>
