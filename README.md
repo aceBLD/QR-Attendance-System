@@ -1,2 +1,5 @@
-# QR-Attendance-System
-For Practical Research made in Website/Web Application
+# Secure QR-Attendance-System (Attendy)
+For Tracking and listing attendance of your Students & Employees
+
+## Purpose
+coming soon..
