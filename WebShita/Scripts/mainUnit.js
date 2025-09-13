@@ -30,28 +30,6 @@ document.getElementById("SignUp").addEventListener("click", function () {
     document.querySelector(".greeting-open-pag").style.display = "none";
 });//end of greeting page handler
 
-/*
-functionalities for sign in*
-This is impossible without backend and i need urgent help
-from contributors who know backend development
-so if you are one please help me out
-*/
-//don't have an account button
-document.getElementById("sign-link").addEventListener("click", function () {
-    document.querySelector(".signIn-Container").style.display = "none";
-    document.querySelector(".signUp-Container").style.display = "block";
-    document.querySelector(".greeting-open-pag").style.display = "none";
-
-});
-
-
-/*
-functionalities for sign up*
-This is impossible without backend and i need urgent help
-from contributors who know backend development
-so if you are one please help me out
-*/
-
 //already have an account button
 document.getElementById("log-link").addEventListener("click", function () {
     document.querySelector(".signIn-Container").style.display = "block";
@@ -61,21 +39,73 @@ document.getElementById("log-link").addEventListener("click", function () {
 });//life so miserable without a kiss/lovey dovey message
 //i need motivation xD 
 
-    //type shit  for sign up (when clicking the shit out of sign up)
-function Signup(){
-    //calling the element by identification (id
-    const name = document.getElementById("name").value ;      
-    const email = document.getElementById("email").value;
-    const password = document.getElementById("password").value;
-    const confPas = document.getElementById("confirmPassword").value;
-    
-    if (!name || !email || !password || !confPas){//if any of this is not filled
-        document.getElementById("error-message").textContent = "Please fill up the form!";
 
-    }
-    if (password !== confPas) {//if the password and matching is not equal
-     document.getElementById("error-message").textContent = "the password does not match";
-        event.preventDefault();
-    }
-}
+//don't have an account button
+document.getElementById("sign-link").addEventListener("click", function () {
+    document.querySelector(".signIn-Container").style.display = "none";
+    document.querySelector(".signUp-Container").style.display = "block";
+    document.querySelector(".greeting-open-pag").style.display = "none";
+
+});
+
+
+        //type shit  for sign in (when clicking the shit out of sign in)
+document.getElementById("button-login").addEventListener("submit", async (e) => {
+  e.preventDefault();
+
+  const email = document.getElementById("signinEmail").value;
+  const password = document.getElementById("signinPassword").value;
+
+  const response = await fetch("/webshita/signin", {
+    method: "POST",
+    headers: { "Content-Type": "application/x-www-form-urlencoded" },
+    body: `email=${encodeURIComponent(email)}&password=${encodeURIComponent(password)}`
+  });
+
+  const data = await response.json();
+  const msgEl = document.getElementById("error-message");
+
+  if (data.success) {
+    msgEl.textContent = data.message;
+    msgEl.style.color = "green";
+
+    // Redirect based on role
+    if (data.role === "admin") window.location.href = "/webshita/pages/admin-dashboard.html";
+    else window.location.href = "/webshita/pages/user-dashboard.html";
+  } else {
+    msgEl.textContent = data.message;
+    msgEl.style.color = "red";
+  }
+});
+
+
+
+
+
+
+/*
+functionalities for sign up*
+This is impossible without backend and i need urgent help
+from contributors who know backend development
+so if you are one please help me out
+*/
+    //type shit  for sign up (when clicking the shit out of sign up)
+document.getElementById("button-signup").addEventListener("submit", async (e) => {
+  e.preventDefault();
+
+  const name = document.getElementById("name").value;
+  const email = document.getElementById("signupEmail").value;
+  const password = document.getElementById("signupPassword").value;
+
+  const response = await fetch("/webshita/signup", {
+    method: "POST",
+    headers: { "Content-Type": "application/x-www-form-urlencoded" },
+    body: `email=${encodeURIComponent(email)}&password=${encodeURIComponent(password)}`
+  });
+
+  const data = await response.json();
+  const msgEl = document.getElementById("error-message");
+  msgEl.textContent = data.message;
+  msgEl.style.color = data.success ? "green" : "red";
+});
 //// 
