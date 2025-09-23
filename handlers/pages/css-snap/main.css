@@ -1,0 +1,79 @@
+/*
+QR Attendy base on Website and WebApp lol
+Develop by BELDAD-Ace on Github with the team group 1 for PR2
+aka Jhon Benedict Belad
+
+all rights reserved 2025
+
+*/
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+/*For navigation bar*/
+
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 100%;
+
+
+  nav {
+    background-color: #0097b2;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 11px 3%;
+    width: 90%;
+    border-radius: 10px;
+
+      a {
+        text-decoration: none;
+        color: white;
+      
+      }
+
+      li {
+        list-style: none;
+        display: inline-block;
+        margin: 0 15px;
+        font-size: 18px;
+        color: white;
+        
+        cursor: pointer;
+        
+          a {
+            padding: 4px;
+            border-radius: 20px;
+            transition: 0.5s;
+          }
+          :hover {
+            color: #80a2e2;
+            
+            background-color: #0029b1;
+            transition: 0.5s;
+          }
+      }
+  }
+}
+/*End navigation bar*/
+
+/*for sign up and sign in inputs*/
+#dont {/*Dont touch this one*/
+  border-color: transparent;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.body-sign-up {
+  display: block; 
+
+}
+
+.body-sign-in {
+  display: block;
+}
