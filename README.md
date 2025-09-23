@@ -2,7 +2,7 @@
     <img src="https://github.com/BELDAD-Ace/QR-Attendance-System/blob/main/README-pics/LOGO.png">
 </p>
 
-## QR Attendy
+# QR Attendy
 ### Source code for QR Attendy (Secure QR Attendance System)
 Before we started you have to get familiar with the following: 
 - [Terminal](https://learn.microsoft.com/en-us/windows/terminal/) 
