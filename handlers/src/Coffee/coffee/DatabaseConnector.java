@@ -16,7 +16,7 @@ import java.sql.SQLException;
 public class DatabaseConnector {
     private static final String URL = "jdbc:mysql://localhost:3925/attendy_db"; //SQL Server bruh
     private static final String USER = "root"; //user 
-    private static final String PASSWORD = "NITROgen_jb09"; //passywasy
+    private static final String PASSWORD = "your password"; //passywasy
 
         static {
         try {
@@ -31,3 +31,4 @@ public class DatabaseConnector {
         return DriverManager.getConnection(URL, USER, PASSWORD);
     }
 }
+
