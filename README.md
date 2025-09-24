@@ -4,7 +4,7 @@
 
 # QR Attendy
 #### !!WARNING!!
-This Repository is for Educational purposes only as i do not intend to release any official software or app, and it is not secure and safe yet for anyone when visiting this repository. i am new to this society of programmers and i hope it's understandable. it's only purpose is to present it to the class and nothing else.
+This repository is for educational purposes only. I do not intend to release any official software or app. It is not yet secure or safe for public use. I am new to the programming community and hope this is understandable. Its sole purpose is to present the project to my class.
 ### Source code for QR Attendy (Secure QR Attendance System)
 Before we started you have to get familiar with the following: 
 - [Terminal](https://learn.microsoft.com/en-us/windows/terminal/) 
