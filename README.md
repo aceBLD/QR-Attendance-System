@@ -23,7 +23,4 @@ first if you dont have pom.xml to yo project then SLAP A NEW ONE:
 if yo have pom.xml in ur yee yee ahh project go to Terminal or VScode build in Terminal or whatever
 - if no no VScode [THEN DOWNLOAD](https://code.visualstudio.com/download) ONE BRUH
 - if no no maven [THEN DOWNLOAD](https://maven.apache.org/download.cgi) it :>> <br>
-  COMING SOON.........
-```bash
-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-```
+ full tutorial coming soon for those who wanna use Java as a Backend its not like i know everything cause all people have their styles to create a backend for their website/App
