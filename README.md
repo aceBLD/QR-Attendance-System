@@ -10,12 +10,12 @@ Before we started you have to get familiar with the following:
 - [Terminal](https://learn.microsoft.com/en-us/windows/terminal/) 
 - [pom.xml](https://maven.apache.org/guides/introduction/introduction-to-the-pom.html) 
 - [maven](https://maven.apache.org/guides/getting-started/)
-- [Java Servlets](https://www.geeksforgeeks.org/java/introduction-java-servlets/)
+- [Java Servlets](https://spring.io/guides/gs/spring-boot)
 
 ## File Directories
  <img src="https://github.com/BELDAD-Ace/QR-Attendance-System/blob/main/README-pics/File-DirectoryMap.png">
 
 This is a file Directories of each files and stuff.. i only put this cause my team/members don't understand alien language so i yoink this file directory map so they can find which one to edit. 
 
-### oopsie
-We are switching to Java Spring cause its actually ez than Java Servlet
+### Notice
+official source code comming soon!!
