@@ -10,7 +10,7 @@ Before we started you have to get familiar with the following:
 - [Terminal](https://learn.microsoft.com/en-us/windows/terminal/) 
 - [pom.xml](https://maven.apache.org/guides/introduction/introduction-to-the-pom.html) 
 - [maven](https://maven.apache.org/guides/getting-started/)
-- [Java Servlets](https://spring.io/guides/gs/spring-boot)
+- [Java Spring Boot](https://spring.io/guides/gs/spring-boot)
 
 ## File Directories
  <img src="https://github.com/BELDAD-Ace/QR-Attendance-System/blob/main/README-pics/File-DirectoryMap.png">
