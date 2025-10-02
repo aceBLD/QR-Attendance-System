@@ -7,7 +7,7 @@
 If you are reading this please spare your sanity as i struggle coding this without any knowledge. <br>
 This repository is for educational purposes only. I do not intend to release any official software or app. It is not yet secure or safe for public use. I am new to the programming community and hope this is understandable. Its sole purpose is to present the project to my class.
 ### Source code for QR Attendy (Secure QR Attendance System)
-Before we started you have to get familiar with the following: 
+you have to get familiar with the following: 
 - [Terminal](https://learn.microsoft.com/en-us/windows/terminal/) 
 - [pom.xml](https://maven.apache.org/guides/introduction/introduction-to-the-pom.html) 
 - [maven](https://maven.apache.org/guides/getting-started/)
