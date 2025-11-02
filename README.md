@@ -19,4 +19,4 @@ you have to get familiar with the following:
 This is a file Directories of each files and stuff.. i only put this cause my team/members don't understand alien language so i yoink this file directory map so they can find which one to edit. 
 
 ### Notice
-official source code comming soon!!
+Spare ur sanity
