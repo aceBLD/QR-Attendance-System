@@ -10,8 +10,8 @@ This repository is for educational purposes only. I do not intend to release any
 ### for the Frontend:
 - HTML
 - CSS
-- JavaScript (using TypeScript sooner or later)
-  location: [Properties/Static](https://github.com/BELDAD-Ace/QR-Attendance-System/tree/main/properties/sauce/static) <br>
+- JavaScript (using TypeScript sooner or later) <br>
+  location: [Properties/Static](https://github.com/BELDAD-Ace/QR-Attendance-System/tree/main/properties/sauce/static)
 ### for the Backend:
 Coming soon?? <br> <br>
 you have to get familiar with the following: 
