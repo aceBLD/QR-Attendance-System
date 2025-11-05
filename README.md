@@ -14,7 +14,7 @@ The Secure QR Attendance System also known as QR Attendy is an Web Application t
 ### File Directories
  <img src="https://github.com/BELDAD-Ace/QR-Attendance-System/blob/main/README-pics/File-DirectoryMap.png">
 
-As of November 4,2025 Files and their Directories changes overtime, every 2 weeks this images updates when changes occur
+As of November 4, 2025 Files and their Directories changes overtime, every 2 weeks this images updates when changes occur
 
 #### changes:
 - Set DashboardDominator.java as having a Severe Critical Errors
