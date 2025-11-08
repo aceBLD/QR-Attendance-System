@@ -13,17 +13,15 @@ The Secure QR Attendance System also known as QR Attendy is an Web Application t
 ## Source code for QR Attendy (Secure QR Attendance System)
 ### File Directories
  <img src="https://github.com/BELDAD-Ace/QR-Attendance-System/blob/main/README-pics/File-DirectoryMap.png">
-
-As of November 4, 2025 Files and their Directories changes overtime, every 2 weeks this images updates when changes occur
+ 
+Files and their Directories changes overtime, every 2 weeks this images updates when changes occur <br>
+As of November 4, 2025 i decided to code in seperate between the Official Website and the App itself, i just need to learn how to make an App using Android Studio
 
 #### changes:
-- Set DashboardDominator.java as having a Severe Critical Errors
-- Set UserRepository.java as having a Moderate Errors
-- Marked index-mobil.html as Not Created yet at dashboard folder
-- added download.css at Zesty-design folder
-- added about.css at Zesty-design folder
-- changed board.js name into dashBoard.js
-
+- Taking glances and some changes at the WebApp Branch
+#### NOTICE:
+- Backend for website is still not fixed (Maybe using Php soon?)
+- Fewer Bugs left on the frontend (Especially for the Scripts)
 ### for the Frontend:
 - HTML
 - CSS
@@ -36,7 +34,3 @@ you have to get familiar with the following:
 - [pom.xml](https://maven.apache.org/guides/introduction/introduction-to-the-pom.html) 
 - [maven](https://maven.apache.org/guides/getting-started/)
 - [Java Spring Boot](https://spring.io/guides/gs/spring-boot)
-
-
-
-
