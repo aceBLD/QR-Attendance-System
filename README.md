@@ -34,7 +34,3 @@ you have to get familiar with the following:
 - [pom.xml](https://maven.apache.org/guides/introduction/introduction-to-the-pom.html) 
 - [maven](https://maven.apache.org/guides/getting-started/)
 - [Java Spring Boot](https://spring.io/guides/gs/spring-boot)
-
-
-
-
