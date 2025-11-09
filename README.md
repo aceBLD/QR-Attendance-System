@@ -12,7 +12,7 @@ The Secure QR Attendance System also known as QR Attendy is an Web Application t
 
 ## Source code for QR Attendy (Secure QR Attendance System)
 ### File Directories
- <img src="https://github.com/BELDAD-Ace/QR-Attendance-System/blob/main/README-pics/File-DirectoryMap.png">
+### FILE DIRECTORIES ARE TEMPORARY UNAVAILABLE 
  
 Files and their Directories changes overtime, every 2 weeks this images updates when changes occur <br>
 As of November 4, 2025 i decided to code in seperate between the Official Website and the App itself, i just need to learn how to make an App using Android Studio
