@@ -4,9 +4,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="/properties/sauce/static/zesty-design/index.css">
-  <link rel="stylesheet" href="/properties/sauce/static/zesty-design/started.css">
-  <link rel="stylesheet" href="/properties/sauce/static/zesty-design/animeEngine.css">
+  <link rel="stylesheet" href="/zesty-design/index.css">
+  <link rel="stylesheet" href="/zesty-design/started.css">
+  <link rel="stylesheet" href="/zesty-design/animeEngine.css">
 
   <title>Attendy</title>
 </head>
@@ -24,9 +24,9 @@
         <li><a href="#">FEATURES</a></li>
         <li><a href="#">TEAM</a></li>
         <li><a href="">
-            <img src="/properties/sauce/static/img/github-mark-white.png" alt="">
+            <img src="/img/github-mark-white.png" alt="">
           </a></li>
-        <li></li> 
+        <li></li>
       </ul>
       <div class="sidebar">
 
@@ -42,7 +42,7 @@
     <div class="main-title">
       <h1>QR Attendy</h1>
       <h3>Attendance for everyone</h3>
-      
+
     </div>
 
     <!--Sign in page-->
@@ -57,7 +57,8 @@
         <button type="submit" class="button-signer">Sign in</button>
       </form>
       <p id="signinMessage" style="color:red;"></p>
-      <p style="margin-top: 25px;">don’t have an account? <button id="dont" onclick="afterIn()">Sign up here.</button></p>
+      <p style="margin-top: 25px;">don’t have an account? <button id="dont" onclick="afterIn()">Sign up here.</button>
+      </p>
       <br>
     </div>
     <!--END OF Sign in page-->
@@ -79,23 +80,24 @@
 
           <p>What are you?</p>
           <div class="choiceButton-container">
-          <div class="Sign-up-choice-button">
-            <div class="student">
-              <input type="radio" id="Student" name="role" value="Student">
-              <label for="Student">Student</label>
-            </div>
+            <div class="Sign-up-choice-button">
+              <div class="student">
+                <input type="radio" id="Student" name="role" value="Student">
+                <label for="Student">Student</label>
+              </div>
 
-            <div class="teacher">
-              <input type="radio" id="Teacher" name="role" value="Teacher">
-              <label for="Teacher">Teacher</label>
+              <div class="teacher">
+                <input type="radio" id="Teacher" name="role" value="Teacher">
+                <label for="Teacher">Teacher</label>
+              </div>
             </div>
-            </div>
-              <div class="sign-upButton"><button type="submit" class="button-signer">Sign up</button></div>
+            <div class="sign-upButton"><button type="submit" class="button-signer">Sign up</button></div>
           </div>
         </form>
       </div><!--IGNORE THE sign-uplayer1-->
       <p id="signupMessage" style="color:red;"></p>
-      <p style="margin-top: 25px;">Already have an account? <button id="dont" onclick="afterUp()">Sign In here.</button></p>
+      <p style="margin-top: 25px;">Already have an account? <button id="dont" onclick="afterUp()">Sign In here.</button>
+      </p>
     </div>
     <!--END OF Sign up page-->
 
