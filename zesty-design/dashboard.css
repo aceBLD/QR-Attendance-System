@@ -1,0 +1,296 @@
+/*
+QR Attendy base on Website and WebApp lol
+Develop by BELDAD-Ace on Github with the team group 1 for PR2
+aka Jhon Benedict Belad
+
+all rights reserved 2025
+
+*/
+/* body {
+  display: flex;
+  align-items: center;
+} */
+body {
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+header {
+  transition: all 0.3s ease-in-out;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: -27px;
+  left: 0;
+  right: 0;
+  width: 100%;
+  z-index: 100;
+
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 11px 3%;
+    width: 100%;
+    transition: 0.5s;
+
+    border-bottom: #ffffff00 2px solid;
+    color: white;
+
+    .title {
+      text-decoration: none;
+      cursor: pointer;
+    }
+
+    img {
+      opacity: 0;
+
+    }
+
+  }
+
+  .sidebar {
+    display: none;
+  }
+
+  li {
+    opacity: 0;
+    list-style: none;
+    display: inline-block;
+    margin: 0 15px;
+    font-size: 20px;
+
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+
+    a {
+      text-decoration: none;
+      padding: 5px;
+      border-radius: 10px;
+      transition: 0.5s;
+      font-weight: bold;
+      color: white;
+    }
+
+    :hover {
+      color: #d9d9d9;
+
+      background-color: #575757;
+      transition: 0.3s;
+    }
+
+    img {
+      vertical-align: middle;
+      width: 28px;
+      height: 28px;
+    }
+  }
+}
+
+header:hover {
+  top: 0px;
+
+  nav {
+    background-color: rgba(0, 21, 95, 0.3);
+    -webkit-backdrop-filter: blur(10px);
+    /* For Safari */
+    backdrop-filter: blur(10px);
+
+    border-bottom: #ffffff 2px solid;
+    box-shadow: 0 0 10px #ffffffa8;
+    width: 90%;
+    border-radius: 0px 0px 15px 15px;
+
+    img {
+      opacity: 1;
+    }
+
+    li {
+      opacity: 1;
+    }
+  }
+
+
+}
+
+/* START OF THE SIDEBAR*/
+.side-nav {
+  width: 205px;
+  margin-top: 35px;
+
+  /* The user */
+  .user-info-Container {
+    display: flex;
+    border-bottom: 2px solid #ffffff;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+
+    img {
+      width: 25px;
+      height: 25px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin: 10px;
+      border: 1px solid #ffffff;
+    }
+
+    h3 {
+      color: white;
+      font-weight: bold;
+      font-size: 12px;
+      margin-top: 5px;
+    }
+
+    p {
+      font-size: 10px;
+      color: #ffffff;
+    }
+  }
+
+  /* Boto Buttons */
+  .boto-Nav,
+  .boto-Nav2 {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    background-color: transparent;
+    cursor: pointer;
+
+    font-size: 20px;
+    font-weight: bold;
+    text-align: left;
+
+    &:hover {
+      background-color: lightgray;
+    }
+
+  }
+
+  /* student or teacher Container */
+  .studentORteacher-Container {
+    border-top: 2px solid #ffffff;
+    padding-top: 10px;
+    margin-top: 10px;
+    text-align: center;
+    height: calc(100% - 20px);
+    /* background-color: red; */
+
+
+    p {
+      font-size: 10px;
+      color: gray;
+    }
+  }
+
+  /* Boto Container */
+  .boto-Container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+
+
+  }
+
+  .boto-Container2 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 5px;
+    margin-top: 20px;
+  }
+}
+
+/*DASHBOARD CONTAINER*/
+.dashboard-container {
+  /* clear: left; */
+  margin-left: auto;
+  /* border: 2px solid #3c00ff; */
+  border-radius: 15px 0px 0px 0px;
+  box-shadow: rgb(255, 255, 255) 6px 10px 30px -1px, rgba(0, 0, 0, 0.87) 0px 5px 4px -1px;
+  background-color: #fdfdfd16;
+  overflow: hidden;
+
+  width: calc(100% - 230px);
+  max-height: 100vh;
+  margin-top: 35px;
+
+  display: flex;
+  flex-direction: column;
+
+  .dashGreet {
+    color: white;
+    padding: 20px;
+    font-size: 30px;
+
+    span {
+      color: aqua;
+    }
+  }
+
+  .sub-dashboard-container {
+    width: 100%;
+    height: max-content;
+    display: flex;
+    justify-content: space-around;
+    overflow: auto;
+
+    .user-stat {
+      display: flex;
+      flex-direction: column;
+
+
+      width: 390px;
+      height: 145px;
+      /* margin: 0px 0px 0px 40px; */
+      padding: 10px;
+      background-color: white;
+      border-radius: 20px;
+
+      h2 {
+        font-size: 25px;
+      }
+
+      .stat-content {
+        display: flex;
+        flex-direction: row;
+
+        .statNO {
+          margin: 5px auto 10px;
+                  h2 {
+          font-size: 20px;
+        }
+
+          #present-stat,
+          #excuse-stat,
+          #absent-stat {
+            text-align: center;
+            font-weight: bold;
+            font-size: 25px;
+            color: #000000;
+          }
+        }
+      }
+    }
+
+    .user-schedules {
+      background-color: white;
+      margin: 0px 0px 0px 0px;
+      padding: 10px;
+
+      display: flex;
+      flex-direction: column;
+      height: max-content;
+    }
+
+  }
+
+}
