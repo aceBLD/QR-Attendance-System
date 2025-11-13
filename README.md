@@ -4,6 +4,13 @@
 
 # QR Attendy
 ### Introduction
-!! UNDER CONSTRUCTION !!
+there is no introduction yet
+
+#### Dev note requirements
+- Electron
+- Java Spring boot
+- offline utilization
+- Andeoid studio familiarity
+- QR code API
 
 
